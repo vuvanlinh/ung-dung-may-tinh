@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung may tinh</title>
+    <script>
+        function Cong() {
+            let sothunhat = document.getElementById("sothunhat").value;
+            sothu1=parseInt(sothunhat);
+            let sothuhai = document.getElementById("sothuhai").value;
+            sothu2=parseInt(sothuhai);
+            kq = sothu1+sothu2;
+            document.getElementById("output").innerHTML = kq;
+        }
+        function Tru() {
+            let sothunhat = document.getElementById("sothunhat").value;
+            sothu1=parseInt(sothunhat);
+            let sothuhai = document.getElementById("sothuhai").value;
+            sothu2=parseInt(sothuhai);
+            kq = sothu1-sothu2;
+            document.getElementById("output").innerHTML = kq;
+        }
+        function Nhan() {
+            let sothunhat = document.getElementById("sothunhat").value;
+            sothu1=parseInt(sothunhat);
+            let sothuhai = document.getElementById("sothuhai").value;
+            sothu2=parseInt(sothuhai);
+            kq = sothu1*sothu2;
+            document.getElementById("output").innerHTML = kq;
+        }
+        function Chia() {
+            let sothunhat = document.getElementById("sothunhat").value;
+            sothu1=parseInt(sothunhat);
+            let sothuhai = document.getElementById("sothuhai").value;
+            sothu2=parseInt(sothuhai);
+            kq = sothu1/sothu2;
+            document.getElementById("output").innerHTML = kq;
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+<form>
+    <input id="sothunhat" type="number" name="sothunhat"/>
+    <input id="sothuhai" type="number" name="sothuhai"/>
+    <br><br>
+    <button type="button" id="cong" onclick="Cong()">Cộng</button>
+    <button type="button" id="tru" onclick="Tru()">Trừ</button>
+    <button type="button" id="nhan" onclick="Nhan()">Nhân</button>
+    <button type="button" id="chia" onclick="Chia()">Chia</button>
+    <br><br>
+    Kết quả:
+    <output id ="output"></output>
+
+
+
+</form>
+</body>
+</html>
